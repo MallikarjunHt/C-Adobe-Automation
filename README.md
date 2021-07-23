@@ -5,3 +5,14 @@ docTOIndd ➡️ import **docx** file and extract text and place in **InDesign**
 
 word manuplation => https://www.c-sharpcorner.com/forums/how-to-get-current-document-styles-from-word-document
 https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.word.paragraphformat?view=word-pia
+
+
+ for (int i = 1; i <= application.Fonts.Count; i++)
+                {
+                    InDesign.Font font = (InDesign.Font)application.Fonts[i];
+                    if(font.FullName.Equals("Acumin Variable Concept SemiCondensed Black Italic"))
+                    {
+                        text.AppliedFont = font;
+                        break;
+                    }
+                } 

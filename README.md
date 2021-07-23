@@ -7,6 +7,9 @@ word manuplation => https://www.c-sharpcorner.com/forums/how-to-get-current-docu
 https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.word.paragraphformat?view=word-pia
 
 
+InDesign.Texts texts= (InDesign.Texts)frames.Texts;
+                InDesign.Text text = (InDesign.Text)texts.FirstItem();
+                
  for (int i = 1; i <= application.Fonts.Count; i++)
                 {
                     InDesign.Font font = (InDesign.Font)application.Fonts[i];

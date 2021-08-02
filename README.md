@@ -19,3 +19,16 @@ InDesign.Texts texts= (InDesign.Texts)frames.Texts;
                         break;
                     }
                 } 
+
+
+
+
+if(doc.Hyperlinks.Count > 0)
+                {
+                    for (int i = doc.Hyperlinks.Count; i >= 0; i--)
+                    {
+                        InDesign.Hyperlink hyperlink = (InDesign.Hyperlink)doc.Hyperlinks[i];
+                        hyperlink.Delete();
+                    }
+                }
+                

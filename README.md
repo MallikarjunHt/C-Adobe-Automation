@@ -33,3 +33,6 @@ if(doc.Hyperlinks.Count > 0)
                 }
 ```
 http://blog.gilbertconsulting.com/2007/10/use-grep-to-find-url.html
+
+`[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}` finds Email
+Both Email and URL `[\S]+[.][\S]+`

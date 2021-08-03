@@ -6,10 +6,11 @@ docTOIndd ➡️ import **docx** file and extract text and place in **InDesign**
 word manuplation => https://www.c-sharpcorner.com/forums/how-to-get-current-document-styles-from-word-document
 https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.word.paragraphformat?view=word-pia
 
-
+```javaScript
 InDesign.Texts texts= (InDesign.Texts)frames.Texts;
-                InDesign.Text text = (InDesign.Text)texts.FirstItem();
-                
+InDesign.Text text = (InDesign.Text)texts.FirstItem();
+```                
+ ```javaScript               
  for (int i = 1; i <= application.Fonts.Count; i++)
                 {
                     InDesign.Font font = (InDesign.Font)application.Fonts[i];
@@ -19,10 +20,9 @@ InDesign.Texts texts= (InDesign.Texts)frames.Texts;
                         break;
                     }
                 } 
+```
 
-
-
-
+```javaScript
 if(doc.Hyperlinks.Count > 0)
                 {
                     for (int i = doc.Hyperlinks.Count; i >= 0; i--)
@@ -31,4 +31,5 @@ if(doc.Hyperlinks.Count > 0)
                         hyperlink.Delete();
                     }
                 }
-                
+```
+http://blog.gilbertconsulting.com/2007/10/use-grep-to-find-url.html

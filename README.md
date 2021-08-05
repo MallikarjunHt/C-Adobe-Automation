@@ -37,3 +37,10 @@ http://blog.gilbertconsulting.com/2007/10/use-grep-to-find-url.html
 `[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}` finds Email
 Both Email and URL `[\S]+[.][\S]+`
 `grep 	{finfwhat:"([\S]+[.][\S]+)"} {changeTo:"$1"} {includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:true}	Find all Email and URL's and change Style.`
+
+```csharp
+application.WordRTFImportPreferences.ResolveCharacterStyleClash = InDesign.idResolveStyleClash.idResolveClashUseExisting;
+application.WordRTFImportPreferences.ResolveParagraphStyleClash = InDesign.idResolveStyleClash.idResolveClashUseExisting;
+application.WordRTFImportPreferences.ImportUnusedStyles = false;
+application.WordRTFImportPreferences.ConvertBulletsAndNumbersToText = false;
+```
